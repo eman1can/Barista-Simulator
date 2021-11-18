@@ -1,7 +1,13 @@
 {
   "dependencies": {
+    "ca.andydbc.unity-texture-packer": {
+      "version": "file:C:/Users/Zoe/Downloads/unity-texture-packer-master",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {}
+    },
     "com.unity.analytics": {
-      "version": "3.5.3",
+      "version": "3.6.11",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -17,12 +23,10 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.collab-proxy": {
-      "version": "1.7.1",
+      "version": "1.11.2",
       "depth": 0,
       "source": "registry",
-      "dependencies": {
-        "com.unity.nuget.newtonsoft-json": "2.0.0"
-      },
+      "dependencies": {},
       "url": "https://packages.unity.com"
     },
     "com.unity.ext.nunit": {
@@ -51,7 +55,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.ide.vscode": {
-      "version": "1.2.3",
+      "version": "1.2.4",
       "depth": 0,
       "source": "registry",
       "dependencies": {},
@@ -70,13 +74,6 @@
       "source": "git",
       "dependencies": {},
       "hash": "af4f0a33555647a8866bddf84e0e1ac33c678f8b"
-    },
-    "com.unity.nuget.newtonsoft-json": {
-      "version": "2.0.0",
-      "depth": 1,
-      "source": "registry",
-      "dependencies": {},
-      "url": "https://packages.unity.com"
     },
     "com.unity.probuilder": {
       "version": "4.5.2",
@@ -142,7 +139,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.test-framework": {
-      "version": "1.1.27",
+      "version": "1.1.29",
       "depth": 0,
       "source": "registry",
       "dependencies": {
