@@ -306,13 +306,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d7593b3a9277ac4696b20006c21dde2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   m_AdvancedMode: 0
   skyType:
     m_OverrideState: 1
     m_Value: 4
   skyAmbientMode:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 1
   fogType:
     m_OverrideState: 1
@@ -329,7 +329,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56b145d2b9ee1ac4f846968484e7485a, type: 3}
   m_Name: ContactShadows
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   m_AdvancedMode: 0
   quality:
     m_OverrideState: 1
@@ -517,7 +517,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e17fad69ea181b4483974138b566975, type: 3}
   m_Name: ScreenSpaceRefraction
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   m_AdvancedMode: 0
   screenFadeDistance:
     m_OverrideState: 1
@@ -638,7 +638,7 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: 4
   meteringMode:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 4
   luminanceSource:
     m_OverrideState: 0
@@ -647,14 +647,14 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: 1.7487878
   compensation:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 0
   limitMin:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: -5
   limitMax:
     m_OverrideState: 1
-    m_Value: 2.9961207
+    m_Value: 4.207781
   curveMap:
     m_OverrideState: 0
     m_Value:
@@ -748,7 +748,7 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: {fileID: 0}
   histogramPercentages:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: {x: 0, y: 80}
     min: 0
     max: 100
@@ -765,7 +765,7 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: {x: 0.5, y: 0.5}
   proceduralRadii:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: {x: 0.5, y: 0.5}
   maskMinIntensity:
     m_OverrideState: 0
@@ -774,7 +774,7 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 30
   proceduralSoftness:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 1
     min: 0
 --- !u!114 &8049981929359091865

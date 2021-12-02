@@ -13,16 +13,8 @@ public class BookSpawner : MonoBehaviour {
             Instantiate(open[bookIndex], transform);
         } else if (type < 80) {
             // Stack of books
-            int height = Random.Range(0, 2);
-            float heightOffset = 0;
-            for (int i = 0; i < height; i++) {
-                int bookIndex = Random.Range(0, stacks.Length);
-                GameObject stack = Instantiate(stacks[bookIndex], transform);
-                BoxCollider collider = stack.GetComponent<BoxCollider>();
-                stack.transform.localPosition = new Vector3(0, heightOffset, 0);
-                heightOffset += collider.size.y;
-                stack.transform.localEulerAngles = new Vector3(0, Random.Range(0, 360), 0);
-            }
+            int bookIndex = Random.Range(0, stacks.Length);
+            GameObject stack = Instantiate(stacks[bookIndex], transform);
         } else {
             // Single book
             int height = Random.Range(0, 4);
