@@ -1,42 +1,37 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
-public class RadioPlaylist : MonoBehaviour
-{
+public class RadioPlaylist : MonoBehaviour {
+    public TextMeshPro titleLabel;
     public AudioSource source;
     public AudioClip[] songs;
+    
     public int songIndex = 0;
 
-    public bool next = false;
-
-    private void Start()
-    {
-        if (songs.Length == 0)
-        {
+    private void Start() {
+        if (songs.Length == 0) {
             return;
         }
-        source.clip = songs[0];
-        source.Play();
+
+        songIndex = Random.Range(0, songs.Length);
+        PlaySong(songs[songIndex]);
     }
 
-    private void Update()
-    {
-        if (next)
-        {
-            next = false;
-            source.Stop();
-        }
-
-        if (!source.isPlaying && songs.Length != 0)
-        {
+    private void Update() {
+        if (!source.isPlaying && songs.Length != 0) {
             songIndex++;
-            if (songIndex >= songs.Length)
-            {
+            if (songIndex >= songs.Length) {
                 songIndex = 0;
             }
-            source.clip = songs[songIndex];
-            source.Play();
+            PlaySong(songs[songIndex]);
         }
+    }
+
+    private void PlaySong(AudioClip song) {
+        source.clip = song;
+        source.Play();
+        titleLabel.text = song.name;
     }
 }
