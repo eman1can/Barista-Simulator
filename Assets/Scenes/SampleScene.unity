@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 1.302335, g: 2.843398, b: 3.369442, a: 1}
+  m_IndirectSpecularColor: {r: 1.3044949, g: 2.8482323, b: 3.3762398, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1729,6 +1729,7 @@ GameObject:
   - component: {fileID: 437134660}
   - component: {fileID: 437134663}
   - component: {fileID: 437134662}
+  - component: {fileID: 437134664}
   m_Layer: 6
   m_Name: Brew Switch
   m_TagString: Untagged
@@ -1830,6 +1831,26 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.093357146, y: 0.029676437, z: 0.029676437}
   m_Center: {x: -0.899873, y: 1.0378379, z: -0.33014756}
+--- !u!114 &437134664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 437134658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e7e6306ba986eb4c96d8e5c790da5f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _pressedOffsetPosition: {x: 0.05, y: 0, z: 0}
+  _toggleButtonTimeLength: 1
+  _onPress:
+    m_PersistentCalls:
+      m_Calls: []
+  _offPress:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &440931709
 GameObject:
   m_ObjectHideFlags: 0
@@ -8550,6 +8571,7 @@ GameObject:
   - component: {fileID: 1412823190}
   - component: {fileID: 1412823193}
   - component: {fileID: 1412823192}
+  - component: {fileID: 1412823194}
   m_Layer: 6
   m_Name: Power Switch
   m_TagString: Untagged
@@ -8651,6 +8673,50 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.093357146, y: 0.029676437, z: 0.029676437}
   m_Center: {x: -0.89987254, y: 1.107994, z: -0.33014756}
+--- !u!114 &1412823194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1412823188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e7e6306ba986eb4c96d8e5c790da5f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _pressedOffsetPosition: {x: 0.05, y: 0, z: 0}
+  _toggleButtonTimeLength: 1
+  _onPress:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 633758118}
+        m_TargetAssemblyTypeName: EspressoMachine, Assembly-CSharp
+        m_MethodName: TurnOn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _offPress:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 633758118}
+        m_TargetAssemblyTypeName: EspressoMachine, Assembly-CSharp
+        m_MethodName: TurnOff
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &1418261274 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1071852953543046821, guid: e49f91931294e69448cea719aaa19235, type: 3}
@@ -9514,6 +9580,7 @@ GameObject:
   - component: {fileID: 1609275756}
   - component: {fileID: 1609275759}
   - component: {fileID: 1609275758}
+  - component: {fileID: 1609275760}
   m_Layer: 6
   m_Name: Steam Switch
   m_TagString: Untagged
@@ -9615,6 +9682,26 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.093357146, y: 0.029676437, z: 0.029676378}
   m_Center: {x: -0.89987254, y: 0.9677318, z: -0.33014753}
+--- !u!114 &1609275760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1609275754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e7e6306ba986eb4c96d8e5c790da5f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _pressedOffsetPosition: {x: 0.05, y: 0, z: 0}
+  _toggleButtonTimeLength: 1
+  _onPress:
+    m_PersistentCalls:
+      m_Calls: []
+  _offPress:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &1616230943 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6979351295171511291, guid: 2658dc79455b4694e9b38cd7b9453ff0, type: 3}
