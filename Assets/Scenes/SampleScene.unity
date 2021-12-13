@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 1.3044949, g: 2.8482628, b: 3.3762665, a: 1}
+  m_IndirectSpecularColor: {r: 1.3042831, g: 2.8481026, b: 3.3757992, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -323,7 +323,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh23466
+  m_Name: pb_Mesh37482
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -761,6 +761,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 154130440}
+  - component: {fileID: 154130441}
   m_Layer: 6
   m_Name: Steam Switch
   m_TagString: Untagged
@@ -783,6 +784,26 @@ Transform:
   m_Father: {fileID: 1864839070}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &154130441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 154130439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5d084e8070a8c74f836538f7e414552, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _pressedOffsetPosition: {x: 0.05, y: 0, z: 0}
+  _toggleButtonTimeLength: 1
+  _onPress:
+    m_PersistentCalls:
+      m_Calls: []
+  _offPress:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &169254857
 GameObject:
   m_ObjectHideFlags: 0
@@ -849,7 +870,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh42684
+  m_Name: pb_Mesh37894
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2117,6 +2138,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 512840025}
+  - component: {fileID: 512840026}
   m_Layer: 6
   m_Name: Brew Switch
   m_TagString: Untagged
@@ -2139,6 +2161,26 @@ Transform:
   m_Father: {fileID: 1864839070}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &512840026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 512840024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5d084e8070a8c74f836538f7e414552, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _pressedOffsetPosition: {x: 0.05, y: 0, z: 0}
+  _toggleButtonTimeLength: 1
+  _onPress:
+    m_PersistentCalls:
+      m_Calls: []
+  _offPress:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &546211031
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2718,7 +2760,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5d084e8070a8c74f836538f7e414552, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _pressedOffsetPosition: {x: 0, y: 0, z: 0}
+  _pressedOffsetPosition: {x: 0.05, y: 0, z: 0}
   _toggleButtonTimeLength: 1
   _onPress:
     m_PersistentCalls:
@@ -3651,7 +3693,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh23598
+  m_Name: pb_Mesh37622
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -10533,10 +10575,52 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interaction: {fileID: 1689402484}
   interactionGUI: {fileID: 1689402486}
-  displayName: 
-  images: []
-  infoStrings: []
-  infoCount: 0
+  displayName: Espresso Machine
+  images:
+  - {fileID: 0}
+  - {fileID: 21300000, guid: 30edeaa9d301b50479dfeec18e77ec2e, type: 3}
+  - {fileID: 21300000, guid: 308f27d5e2b24d147bed4c62c22d4ab2, type: 3}
+  - {fileID: 21300000, guid: 0ccd40c47ffdbbc4ba3fb3ad7842a819, type: 3}
+  - {fileID: 21300000, guid: 0ccd40c47ffdbbc4ba3fb3ad7842a819, type: 3}
+  - {fileID: 21300000, guid: afcc87ab95221f74da64fd76727d721d, type: 3}
+  - {fileID: 21300000, guid: afcc87ab95221f74da64fd76727d721d, type: 3}
+  - {fileID: 21300000, guid: afcc87ab95221f74da64fd76727d721d, type: 3}
+  - {fileID: 21300000, guid: afcc87ab95221f74da64fd76727d721d, type: 3}
+  - {fileID: 21300000, guid: afcc87ab95221f74da64fd76727d721d, type: 3}
+  - {fileID: 21300000, guid: afcc87ab95221f74da64fd76727d721d, type: 3}
+  - {fileID: 21300000, guid: afcc87ab95221f74da64fd76727d721d, type: 3}
+  - {fileID: 21300000, guid: afcc87ab95221f74da64fd76727d721d, type: 3}
+  - {fileID: 21300000, guid: afcc87ab95221f74da64fd76727d721d, type: 3}
+  - {fileID: 21300000, guid: afcc87ab95221f74da64fd76727d721d, type: 3}
+  - {fileID: 21300000, guid: afcc87ab95221f74da64fd76727d721d, type: 3}
+  - {fileID: 21300000, guid: 0ccd40c47ffdbbc4ba3fb3ad7842a819, type: 3}
+  - {fileID: 21300000, guid: 308f27d5e2b24d147bed4c62c22d4ab2, type: 3}
+  - {fileID: 21300000, guid: 308f27d5e2b24d147bed4c62c22d4ab2, type: 3}
+  - {fileID: 21300000, guid: 308f27d5e2b24d147bed4c62c22d4ab2, type: 3}
+  - {fileID: 21300000, guid: 308f27d5e2b24d147bed4c62c22d4ab2, type: 3}
+  infoStrings:
+  - Current State
+  - Temperature
+  - Action
+  - Machine Off
+  - Machine On
+  - Portafilter Missing
+  - Water Container Missing
+  - Drip Tray Missing
+  - Cup Missing
+  - Has No Grounds
+  - Grounds Not Tamped
+  - Grounds Spoiled
+  - Has No Water
+  - Drip Tray Full
+  - Cup Full
+  - Temperature < 88 C
+  - Brewing
+  - Turn On
+  - Turn Off
+  - Start Brewing
+  - Stop Brewing
+  infoCount: 3
   currentLayer: 6
 --- !u!114 &1864839072
 MonoBehaviour:
