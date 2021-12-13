@@ -11,6 +11,10 @@ public class RadioPlaylist : MonoBehaviour {
     private int songIndex = 0;
     private bool paused = false;
 
+    public void AdjustVolume(float percent) {
+        source.volume = percent;
+    }
+    
     private void Start() {
         if (songs.Length == 0) {
             return;

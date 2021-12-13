@@ -25,8 +25,8 @@ public class MouseLook : MonoBehaviour {
     private float rotationX;
 
     void Start() {
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        // Cursor.lockState = CursorLockMode.Locked;
+        // Cursor.visible = false;
     }
 
     void Update() {
