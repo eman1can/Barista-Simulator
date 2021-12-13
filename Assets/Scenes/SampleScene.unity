@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 1.302335, g: 2.843398, b: 3.369442, a: 1}
+  m_IndirectSpecularColor: {r: 1.3042831, g: 2.8481026, b: 3.3757992, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -323,7 +323,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh23466
+  m_Name: pb_Mesh37482
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -752,6 +752,58 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cac28057e6804de4f808f114b8b6bf56, type: 3}
+--- !u!1 &154130439
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 154130440}
+  - component: {fileID: 154130441}
+  m_Layer: 6
+  m_Name: Steam Switch
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &154130440
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 154130439}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1609275755}
+  m_Father: {fileID: 1864839070}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &154130441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 154130439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5d084e8070a8c74f836538f7e414552, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _pressedOffsetPosition: {x: 0.05, y: 0, z: 0}
+  _toggleButtonTimeLength: 1
+  _onPress:
+    m_PersistentCalls:
+      m_Calls: []
+  _offPress:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &169254857
 GameObject:
   m_ObjectHideFlags: 0
@@ -818,7 +870,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh42684
+  m_Name: pb_Mesh37894
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1504,6 +1556,37 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3c98eda0dc408d43a20cce4541da78f, type: 3}
+--- !u!1 &345970668
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 345970669}
+  m_Layer: 6
+  m_Name: Steam Hose
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &345970669
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 345970668}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1887096731}
+  m_Father: {fileID: 1864839070}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &346312115
 GameObject:
   m_ObjectHideFlags: 0
@@ -1520,7 +1603,7 @@ GameObject:
   - component: {fileID: 346312120}
   - component: {fileID: 346312122}
   m_Layer: 6
-  m_Name: Portafilter
+  m_Name: Graphics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1730,7 +1813,7 @@ GameObject:
   - component: {fileID: 437134663}
   - component: {fileID: 437134662}
   m_Layer: 6
-  m_Name: Brew Switch
+  m_Name: Graphics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1743,12 +1826,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 437134658}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1864839070}
-  m_RootOrder: 5
+  m_Father: {fileID: 512840025}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &437134660
 MeshRenderer:
@@ -2046,6 +2129,58 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &512840024
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 512840025}
+  - component: {fileID: 512840026}
+  m_Layer: 6
+  m_Name: Brew Switch
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &512840025
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 512840024}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 437134659}
+  m_Father: {fileID: 1864839070}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &512840026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 512840024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5d084e8070a8c74f836538f7e414552, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _pressedOffsetPosition: {x: 0.05, y: 0, z: 0}
+  _toggleButtonTimeLength: 1
+  _onPress:
+    m_PersistentCalls:
+      m_Calls: []
+  _offPress:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &546211031
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2470,36 +2605,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6979351295171511291, guid: 2658dc79455b4694e9b38cd7b9453ff0, type: 3}
   m_PrefabInstance: {fileID: 779237866}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &609833822
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 609833823}
-  m_Layer: 6
-  m_Name: GUI Point
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &609833823
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 609833822}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.9333328, y: 1.0666668, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1864839070}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &616577245
 GameObject:
   m_ObjectHideFlags: 0
@@ -2512,7 +2617,7 @@ GameObject:
   - component: {fileID: 616577248}
   - component: {fileID: 616577247}
   m_Layer: 6
-  m_Name: Drip Tray Slot
+  m_Name: Drip Tray
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2531,7 +2636,7 @@ Transform:
   m_Children:
   - {fileID: 1374555402}
   m_Father: {fileID: 1864839070}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &616577247
 MonoBehaviour:
@@ -2569,7 +2674,7 @@ MonoBehaviour:
   addEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 633758118}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: EspressoMachine, Assembly-CSharp
         m_MethodName: AddDripTray
         m_Mode: 0
@@ -2584,7 +2689,7 @@ MonoBehaviour:
   removeEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 633758118}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: EspressoMachine, Assembly-CSharp
         m_MethodName: RemoveDripTray
         m_Mode: 1
@@ -2611,6 +2716,58 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.5500001, y: 0.19080985, z: 0.865}
   m_Center: {x: -0.2413551, y: 0.08475401, z: 0}
+--- !u!1 &628951572
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 628951573}
+  - component: {fileID: 628951574}
+  m_Layer: 6
+  m_Name: Power Switch
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &628951573
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 628951572}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1412823189}
+  m_Father: {fileID: 1864839070}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &628951574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 628951572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5d084e8070a8c74f836538f7e414552, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _pressedOffsetPosition: {x: 0.05, y: 0, z: 0}
+  _toggleButtonTimeLength: 1
+  _onPress:
+    m_PersistentCalls:
+      m_Calls: []
+  _offPress:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &633758113
 GameObject:
   m_ObjectHideFlags: 0
@@ -2623,10 +2780,9 @@ GameObject:
   - component: {fileID: 633758117}
   - component: {fileID: 633758116}
   - component: {fileID: 633758115}
-  - component: {fileID: 633758118}
   - component: {fileID: 633758119}
   m_Layer: 6
-  m_Name: Base
+  m_Name: Graphics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2645,7 +2801,7 @@ Transform:
   m_Children:
   - {fileID: 1544470158}
   m_Father: {fileID: 1864839070}
-  m_RootOrder: 9
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &633758115
 MeshRenderer:
@@ -2713,69 +2869,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -7436808556831099223, guid: fcd38757d93932e4e93e477e62031af7, type: 3}
---- !u!114 &633758118
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 633758113}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32e09f05f5e87bf4a9e421ab6d2ea7c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interaction: {fileID: 1689402484}
-  interactionGUI: {fileID: 1689402486}
-  displayName: Espresso Machine
-  images:
-  - {fileID: 0}
-  - {fileID: 21300000, guid: 30edeaa9d301b50479dfeec18e77ec2e, type: 3}
-  - {fileID: 21300000, guid: 308f27d5e2b24d147bed4c62c22d4ab2, type: 3}
-  - {fileID: 21300000, guid: 0ccd40c47ffdbbc4ba3fb3ad7842a819, type: 3}
-  - {fileID: 21300000, guid: 0ccd40c47ffdbbc4ba3fb3ad7842a819, type: 3}
-  - {fileID: 21300000, guid: afcc87ab95221f74da64fd76727d721d, type: 3}
-  - {fileID: 21300000, guid: afcc87ab95221f74da64fd76727d721d, type: 3}
-  - {fileID: 21300000, guid: afcc87ab95221f74da64fd76727d721d, type: 3}
-  - {fileID: 21300000, guid: afcc87ab95221f74da64fd76727d721d, type: 3}
-  - {fileID: 21300000, guid: afcc87ab95221f74da64fd76727d721d, type: 3}
-  - {fileID: 21300000, guid: afcc87ab95221f74da64fd76727d721d, type: 3}
-  - {fileID: 21300000, guid: afcc87ab95221f74da64fd76727d721d, type: 3}
-  - {fileID: 21300000, guid: afcc87ab95221f74da64fd76727d721d, type: 3}
-  - {fileID: 21300000, guid: afcc87ab95221f74da64fd76727d721d, type: 3}
-  - {fileID: 21300000, guid: afcc87ab95221f74da64fd76727d721d, type: 3}
-  - {fileID: 21300000, guid: afcc87ab95221f74da64fd76727d721d, type: 3}
-  - {fileID: 21300000, guid: 0ccd40c47ffdbbc4ba3fb3ad7842a819, type: 3}
-  - {fileID: 21300000, guid: 308f27d5e2b24d147bed4c62c22d4ab2, type: 3}
-  - {fileID: 21300000, guid: 308f27d5e2b24d147bed4c62c22d4ab2, type: 3}
-  - {fileID: 21300000, guid: 308f27d5e2b24d147bed4c62c22d4ab2, type: 3}
-  - {fileID: 21300000, guid: 308f27d5e2b24d147bed4c62c22d4ab2, type: 3}
-  infoStrings:
-  - Current State
-  - Temperature
-  - Action
-  - Machine Off
-  - Machine On
-  - Portafilter Missing
-  - Water Container Missing
-  - Drip Tray Missing
-  - Cup Missing
-  - Has No Grounds
-  - Grounds Not Tamped
-  - Grounds Spoiled
-  - Has No Water
-  - Drip Tray Full
-  - Cup Full
-  - "Temperature < 88 \xB0C"
-  - Brewing
-  - Turn On
-  - Turn Off
-  - Start Brewing
-  - Stop Brewing
-  infoCount: 3
-  _weatherController: {fileID: 818842360}
-  temperatureDisplay: {fileID: 1544470159}
-  coffee: {fileID: 169254859}
 --- !u!64 &633758119
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3600,7 +3693,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh23598
+  m_Name: pb_Mesh37622
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4585,7 +4678,7 @@ GameObject:
   - component: {fileID: 942776647}
   - component: {fileID: 942776648}
   m_Layer: 6
-  m_Name: Water Container
+  m_Name: Graphics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4739,7 +4832,7 @@ GameObject:
   - component: {fileID: 947804658}
   - component: {fileID: 947804657}
   m_Layer: 6
-  m_Name: Water Container Slot
+  m_Name: Water Container
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4752,13 +4845,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 947804655}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.204486, y: 0.191771, z: -0.2666666}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.20448558, y: 0.1917712, z: -0.26666674}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 942776642}
   m_Father: {fileID: 1864839070}
-  m_RootOrder: 10
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &947804657
 MonoBehaviour:
@@ -4796,7 +4889,7 @@ MonoBehaviour:
   addEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 633758118}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: EspressoMachine, Assembly-CSharp
         m_MethodName: AddWaterContainer
         m_Mode: 0
@@ -4811,7 +4904,7 @@ MonoBehaviour:
   removeEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 633758118}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: EspressoMachine, Assembly-CSharp
         m_MethodName: RemoveWaterContainer
         m_Mode: 1
@@ -7508,36 +7601,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1301385575}
   m_Mesh: {fileID: 1422996237714106537, guid: c47cfd90cb616a449b8f4d13df95e09c, type: 3}
---- !u!1 &1305199558
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1305199559}
-  m_Layer: 6
-  m_Name: Thermometer Glass
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1305199559
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1305199558}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1864839070}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1315814722
 GameObject:
   m_ObjectHideFlags: 0
@@ -7737,7 +7800,7 @@ Transform:
   m_Children:
   - {fileID: 814320740}
   m_Father: {fileID: 1864839070}
-  m_RootOrder: 11
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1347897180
 MonoBehaviour:
@@ -7787,7 +7850,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 633758118}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: EspressoMachine, Assembly-CSharp
         m_MethodName: AddCup
         m_Mode: 0
@@ -7814,7 +7877,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 633758118}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: EspressoMachine, Assembly-CSharp
         m_MethodName: RemoveCup
         m_Mode: 1
@@ -7874,7 +7937,7 @@ GameObject:
   - component: {fileID: 1374555405}
   - component: {fileID: 1374555407}
   m_Layer: 6
-  m_Name: Drip Tray
+  m_Name: Graphics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8551,7 +8614,7 @@ GameObject:
   - component: {fileID: 1412823193}
   - component: {fileID: 1412823192}
   m_Layer: 6
-  m_Name: Power Switch
+  m_Name: Graphics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8564,12 +8627,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1412823188}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1864839070}
-  m_RootOrder: 4
+  m_Father: {fileID: 628951573}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1412823190
 MeshRenderer:
@@ -9078,7 +9141,7 @@ GameObject:
   - component: {fileID: 1544470160}
   - component: {fileID: 1544470159}
   m_Layer: 6
-  m_Name: Temperature
+  m_Name: Temperature Display
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9324,14 +9387,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 990439206c680054cb08f9e3b638411d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interaction: {fileID: 1689402484}
-  interactionGUI: {fileID: 1689402486}
-  displayName: Faucet
-  images:
-  - {fileID: 21300000, guid: 308f27d5e2b24d147bed4c62c22d4ab2, type: 3}
-  infoStrings:
-  - Turn On Faucet
-  infoCount: 1
   handlePivot: {fileID: 1814278759}
   handleRotation: 20
   duration: 1.5
@@ -9341,6 +9396,7 @@ MonoBehaviour:
   waterRoot: {fileID: 232819522}
   shutOffPercentage: 0.8
   shutOffTimeout: 4.02
+  _info: {fileID: 0}
 --- !u!65 &1557737932
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9433,14 +9489,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 762014fc0d068d9438bce25bedb11275, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interaction: {fileID: 1689402484}
-  interactionGUI: {fileID: 1689402486}
-  displayName: Espresso Cup
-  images:
-  - {fileID: 21300000, guid: 308f27d5e2b24d147bed4c62c22d4ab2, type: 3}
-  infoStrings:
-  - Grab Cup
-  infoCount: 1
   hand: {fileID: 1177764049}
   prefab: {fileID: 3535683724386528784, guid: 991f295b86858844c8bcdc051de890da, type: 3}
   pickUpEvent:
@@ -9458,6 +9506,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+  _info: {fileID: 0}
 --- !u!65 &1563162700
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9471,36 +9520,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.325, y: 0.25, z: 0.5}
   m_Center: {x: 0, y: 0.075, z: 0}
---- !u!1 &1587983794
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1587983795}
-  m_Layer: 6
-  m_Name: Thermometer
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1587983795
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1587983794}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1864839070}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1609275754
 GameObject:
   m_ObjectHideFlags: 0
@@ -9515,7 +9534,7 @@ GameObject:
   - component: {fileID: 1609275759}
   - component: {fileID: 1609275758}
   m_Layer: 6
-  m_Name: Steam Switch
+  m_Name: Graphics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9528,12 +9547,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1609275754}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1864839070}
-  m_RootOrder: 6
+  m_Father: {fileID: 154130440}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1609275756
 MeshRenderer:
@@ -10216,7 +10235,7 @@ Transform:
   m_LocalScale: {x: 1.3333334, y: 1.3333334, z: 1.3333334}
   m_Children: []
   m_Father: {fileID: 1864839070}
-  m_RootOrder: 12
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 96.18298, y: 0, z: 0}
 --- !u!114 &1766474103
 MonoBehaviour:
@@ -10509,6 +10528,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1864839070}
+  - component: {fileID: 1864839072}
+  - component: {fileID: 1864839071}
   m_Layer: 6
   m_Name: Espresso Machine
   m_TagString: Untagged
@@ -10527,22 +10548,96 @@ Transform:
   m_LocalPosition: {x: 19.765188, y: 8.807596, z: 2.125763}
   m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
   m_Children:
-  - {fileID: 1887096731}
-  - {fileID: 1587983795}
-  - {fileID: 1305199559}
-  - {fileID: 616577246}
-  - {fileID: 1412823189}
-  - {fileID: 437134659}
-  - {fileID: 1609275755}
-  - {fileID: 609833823}
-  - {fileID: 2015841419}
   - {fileID: 633758114}
+  - {fileID: 345970669}
+  - {fileID: 616577246}
+  - {fileID: 628951573}
+  - {fileID: 512840025}
+  - {fileID: 154130440}
+  - {fileID: 2015841419}
   - {fileID: 947804656}
   - {fileID: 1347897179}
   - {fileID: 1766474102}
   m_Father: {fileID: 1187193223}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &1864839071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1864839069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77f9451d138776941a0123de876532f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interaction: {fileID: 1689402484}
+  interactionGUI: {fileID: 1689402486}
+  displayName: Espresso Machine
+  images:
+  - {fileID: 0}
+  - {fileID: 21300000, guid: 30edeaa9d301b50479dfeec18e77ec2e, type: 3}
+  - {fileID: 21300000, guid: 308f27d5e2b24d147bed4c62c22d4ab2, type: 3}
+  - {fileID: 21300000, guid: 0ccd40c47ffdbbc4ba3fb3ad7842a819, type: 3}
+  - {fileID: 21300000, guid: 0ccd40c47ffdbbc4ba3fb3ad7842a819, type: 3}
+  - {fileID: 21300000, guid: afcc87ab95221f74da64fd76727d721d, type: 3}
+  - {fileID: 21300000, guid: afcc87ab95221f74da64fd76727d721d, type: 3}
+  - {fileID: 21300000, guid: afcc87ab95221f74da64fd76727d721d, type: 3}
+  - {fileID: 21300000, guid: afcc87ab95221f74da64fd76727d721d, type: 3}
+  - {fileID: 21300000, guid: afcc87ab95221f74da64fd76727d721d, type: 3}
+  - {fileID: 21300000, guid: afcc87ab95221f74da64fd76727d721d, type: 3}
+  - {fileID: 21300000, guid: afcc87ab95221f74da64fd76727d721d, type: 3}
+  - {fileID: 21300000, guid: afcc87ab95221f74da64fd76727d721d, type: 3}
+  - {fileID: 21300000, guid: afcc87ab95221f74da64fd76727d721d, type: 3}
+  - {fileID: 21300000, guid: afcc87ab95221f74da64fd76727d721d, type: 3}
+  - {fileID: 21300000, guid: afcc87ab95221f74da64fd76727d721d, type: 3}
+  - {fileID: 21300000, guid: 0ccd40c47ffdbbc4ba3fb3ad7842a819, type: 3}
+  - {fileID: 21300000, guid: 308f27d5e2b24d147bed4c62c22d4ab2, type: 3}
+  - {fileID: 21300000, guid: 308f27d5e2b24d147bed4c62c22d4ab2, type: 3}
+  - {fileID: 21300000, guid: 308f27d5e2b24d147bed4c62c22d4ab2, type: 3}
+  - {fileID: 21300000, guid: 308f27d5e2b24d147bed4c62c22d4ab2, type: 3}
+  infoStrings:
+  - Current State
+  - Temperature
+  - Action
+  - Machine Off
+  - Machine On
+  - Portafilter Missing
+  - Water Container Missing
+  - Drip Tray Missing
+  - Cup Missing
+  - Has No Grounds
+  - Grounds Not Tamped
+  - Grounds Spoiled
+  - Has No Water
+  - Drip Tray Full
+  - Cup Full
+  - Temperature < 88 C
+  - Brewing
+  - Turn On
+  - Turn Off
+  - Start Brewing
+  - Stop Brewing
+  infoCount: 3
+  currentLayer: 6
+--- !u!114 &1864839072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1864839069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32e09f05f5e87bf4a9e421ab6d2ea7c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _weatherController: {fileID: 818842360}
+  temperatureDisplay: {fileID: 1544470159}
+  coffee: {fileID: 169254859}
+  _info: {fileID: 1864839071}
 --- !u!1 &1887096730
 GameObject:
   m_ObjectHideFlags: 0
@@ -10557,7 +10652,7 @@ GameObject:
   - component: {fileID: 1887096732}
   - component: {fileID: 1887096735}
   m_Layer: 6
-  m_Name: Steam Hose
+  m_Name: Graphics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10570,11 +10665,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1887096730}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1864839070}
+  m_Father: {fileID: 345970669}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1887096732
@@ -15384,7 +15479,7 @@ GameObject:
   - component: {fileID: 2015841421}
   - component: {fileID: 2015841420}
   m_Layer: 6
-  m_Name: Portafilter Slot
+  m_Name: Portafilter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15397,14 +15492,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2015841418}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.691722, y: 0.711448, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.6917216, y: 0.71144867, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1764187507}
   - {fileID: 346312116}
   m_Father: {fileID: 1864839070}
-  m_RootOrder: 8
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2015841420
 MonoBehaviour:
@@ -15442,7 +15537,7 @@ MonoBehaviour:
   addEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 633758118}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: EspressoMachine, Assembly-CSharp
         m_MethodName: AddPortafilter
         m_Mode: 0
@@ -15469,7 +15564,7 @@ MonoBehaviour:
   removeEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 633758118}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: EspressoMachine, Assembly-CSharp
         m_MethodName: RemovePortafilter
         m_Mode: 1
