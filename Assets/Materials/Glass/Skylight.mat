@@ -9,10 +9,10 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Skylight
   m_Shader: {fileID: -6465566751694194690, guid: 5c6fbde5510dc6a48b25c1d896f583aa, type: 3}
-  m_ShaderKeywords: _ENABLE_FOG_ON_TRANSPARENT _SURFACE_TYPE_TRANSPARENT
+  m_ShaderKeywords: _DOUBLESIDED_ON _ENABLE_FOG_ON_TRANSPARENT _SURFACE_TYPE_TRANSPARENT
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
+  m_DoubleSidedGI: 1
   m_CustomRenderQueue: 3000
   stringTagMap:
     MotionVector: User
@@ -31,7 +31,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_9fed93f3a7dc409bb90a7ae280f0ce40:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: bd7d7b8c4d994584e9dc14afca4b4a4e, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _AnisotropyMap:
@@ -127,13 +127,13 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Boolean_ca45a2a0164440f991dedd9d508ab6fd: 0
+    - Boolean_ca45a2a0164440f991dedd9d508ab6fd: 1
     - Vector1_0124c675656f4459a4fdb9dbec740122: -1
-    - Vector1_092a98d5dbe54f5397fbc5beed90b199: -3.5
+    - Vector1_092a98d5dbe54f5397fbc5beed90b199: -2.17
     - Vector1_17422309d0424b97b8387b6fe5d4fb73: 7
     - Vector1_2e505513e5bf48ee9f4e95879b1ba846: 0.05
     - Vector1_490f0411c929427fbea76a06adc1bccc: 14.53
-    - Vector1_b31a7a8a766b4ff5a7e028ef25910e9a: 1
+    - Vector1_b31a7a8a766b4ff5a7e028ef25910e9a: 0
     - Vector1_fe44d2267f284b15a0c1ba326f496183: 0.5
     - _AORemapMax: 1
     - _AORemapMin: 0
@@ -152,8 +152,8 @@ Material:
     - _Anisotropy: 0
     - _BlendMode: 0
     - _CoatMask: 0
-    - _CullMode: 1
-    - _CullModeForward: 1
+    - _CullMode: 0
+    - _CullModeForward: 0
     - _Cutoff: 0.5
     - _DepthOffsetEnable: 0
     - _DetailAlbedoScale: 1
@@ -164,7 +164,7 @@ Material:
     - _DisplacementLockObjectScale: 1
     - _DisplacementLockTilingScale: 1
     - _DisplacementMode: 0
-    - _DoubleSidedEnable: 0
+    - _DoubleSidedEnable: 1
     - _DoubleSidedNormalMode: 1
     - _DstBlend: 10
     - _EmissiveColorMode: 1
@@ -247,7 +247,7 @@ Material:
     - _ZTestTransparent: 2
     - _ZWrite: 0
     m_Colors:
-    - Vector2_dfc360beae204951911d49422f94c212: {r: 1, g: 1, b: 0, a: 0}
+    - Vector2_dfc360beae204951911d49422f94c212: {r: 5, g: 6, b: 0, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _BaseColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}

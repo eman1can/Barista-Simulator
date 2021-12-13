@@ -8,7 +8,8 @@ public class RadioPlaylist : MonoBehaviour {
     public AudioSource source;
     public AudioClip[] songs;
     
-    public int songIndex = 0;
+    private int songIndex = 0;
+    private bool paused = false;
 
     private void Start() {
         if (songs.Length == 0) {
@@ -20,18 +21,44 @@ public class RadioPlaylist : MonoBehaviour {
     }
 
     private void Update() {
-        if (!source.isPlaying && songs.Length != 0) {
-            songIndex++;
-            if (songIndex >= songs.Length) {
-                songIndex = 0;
+        if (!paused) {
+            if (!source.isPlaying && songs.Length != 0) {
+                PlayNextSong();
             }
-            PlaySong(songs[songIndex]);
+        }
+    }
+    public void SkipSong() {
+        if (source.isPlaying)
+            source.Stop();
+        PlayNextSong();
+    }
+
+    public void PauseSong() {
+        if (source.isPlaying) {
+            source.Pause();
+            paused = true;
+            titleLabel.text = "";
         }
     }
 
+    public void ResumeSong() {
+        source.Play();
+        paused = false;
+        titleLabel.text = source.clip.name;
+    }
+
+    public void PlayNextSong() {
+        songIndex++;
+        if (songIndex >= songs.Length) {
+            songIndex = 0;
+        }
+        PlaySong(songs[songIndex]);
+    }
     private void PlaySong(AudioClip song) {
         source.clip = song;
         source.Play();
         titleLabel.text = song.name;
     }
+
+    
 }
