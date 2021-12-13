@@ -10,7 +10,7 @@ public class Portafilter : MonoBehaviour {
     private bool hasGrounds = false;
     private bool groundsTamped = false;
     private bool groundsSpoiled = false;
-
+    
     public bool HasGrounds => hasGrounds;
     public bool GroundsTamped => groundsTamped;
     public bool GroundsSpoiled => groundsSpoiled;

@@ -284,9 +284,8 @@ public class EspressoMachine : IInteractable {
         if (isOn && isBrewing) {
             // TODO: Update brew stream
             brewTime += Time.deltaTime;
-            if (brewTime > 2f) {
+            if (brewTime > 2f)
                 StopBrewing();
-            }
         }
         
         // push temperature update and calculate heating
