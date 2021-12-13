@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class ToggleButton : MonoBehaviour
+public class ToggleButton : IInteractable
 {
     [SerializeField] private Vector3 _pressedOffsetPosition = Vector3.zero;
     [SerializeField] private float _toggleButtonTimeLength = 1;
@@ -12,7 +12,7 @@ public class ToggleButton : MonoBehaviour
     private bool _isPressed = false;
     private bool _isExecutingPress = false;
 
-    public void OnInteract()
+    public override void OnInteract()
     {
         if (!_isExecutingPress)
         {
