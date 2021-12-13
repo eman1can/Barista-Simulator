@@ -343,7 +343,7 @@ public class LiquidMeshModifier : MonoBehaviour {
     private void ConvertVertexLoopToArray(Dictionary<int, VertexNode<int>> loopVertices, out int[] verticesArray) {
         verticesArray = new int[loopVertices.Count];
         int firstIndex = loopVertices.Keys.Min();
-        VertexNode<int> vertex = loopVertices[firstIndex].First();
+        VertexNode<int> vertex = loopVertices[firstIndex];
 
         Debug.Log("Convert " + loopVertices.Count + " verts.");
         for (int arrayIndex = 0; arrayIndex < loopVertices.Count; arrayIndex++) {

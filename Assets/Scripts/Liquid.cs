@@ -8,12 +8,8 @@ using UnityEngine;
  * as interactions in the material
  */
 public class Liquid : MonoBehaviour {
-    [Header("Liquid Appearance Options")]
-    [SerializeField, Tooltip("The Main Color of this object")]
-    private Color sideColor;
-
-    [SerializeField, Tooltip("The Main Color of this object")]
-    private Color topColor;
+    [Header("Liquid Appearance Options")] [SerializeField, Tooltip("The material of this object")]
+    private Material material;
     
     [Header("Fluid Dynamics options")]
     [SerializeField]
@@ -22,8 +18,6 @@ public class Liquid : MonoBehaviour {
     private WeatherController _weatherController;
     private float _temperature;
     public void SetColors(Material material) {
-        material.SetColor("_Tint", sideColor);
-        material.SetColor("_TopColor", topColor);
     }
     private void Awake() {
         GameObject dayController = GameObject.Find("DayController");
