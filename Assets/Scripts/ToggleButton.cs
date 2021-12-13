@@ -12,12 +12,13 @@ public class ToggleButton : IInteractable
     private bool _isPressed = false;
     private bool _isExecutingPress = false;
 
-    public override void OnInteract()
+    public override bool OnInteract()
     {
         if (!_isExecutingPress)
         {
             StartCoroutine(nameof(TogglePress));
         }
+        return true;
     }
 
     private IEnumerator TogglePress()
